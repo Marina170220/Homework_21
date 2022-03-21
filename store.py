@@ -18,7 +18,7 @@ class Store(Storage):
                     is_item_found = True
             if not is_item_found:
                 self.items[name] = count
-                print(f"Товар {count} {name} добавлен в {self.__repr__()}")
+                print(f"Товар {count} {name} добавлен в {self}")
         else:
             if self.get_free_space() == 0:
                 print("На складе закончилось место, товар не может быть добавлен")
